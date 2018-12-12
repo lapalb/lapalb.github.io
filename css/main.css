@@ -6,7 +6,7 @@
 
 body {
   background-color: #474e5d;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -148,7 +148,7 @@ body {
       color: #ffffff;
   }
   .bg-2 { 
-      background-color: #474e5d; /* Dark Blue */
+      background-color: #337ab7; /* Dark Blue */
       color: #ffffff;
   }
   .bg-3 { 
@@ -177,7 +177,7 @@ body {
   }
 p
 {
-  color: black
+  color: black;font-family: 'Roboto', sans-serif;
 }
 h2
 {

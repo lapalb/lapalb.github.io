@@ -57,5 +57,4 @@
         document.body.appendChild(css);
     };
 
-    // When the user scrolls the page, execute myFunction 
-
+   

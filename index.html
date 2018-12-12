@@ -10,14 +10,32 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/c.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/c1.css">
+  <style type="text/css">
+    .dev-item{
+      display: inline-block;
+    border: 2px solid rgba(57,57,57,.5);
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    line-height: 7;
+    font-size: 14px;
+    color: #f2f2f2;
+    transition: all 0.5s linear 0s;
+    }
+  </style>
+	
 	
 </head>
 <body>
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -32,7 +50,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-         <li><a href="#blog">Blogs</a></li>
+         <li><a href="#blog">Skills</a></li>
         <li><a href="#timeline">Timeline</a></li>
         <li><a href="#contact">contact</a></li>      
         <li><a href="files/115cs0603_Ashish_Jha_CV.pdf">Resume</a></li>
@@ -48,7 +66,7 @@
   <div class="row">
 			<div class="col-sm-2"></div>
 			<div class="col-sm-8">
-				<div class="jumbotron typewriter" style="background-color: #1abc9c">
+				<div class="jumbotron typewriter" style="background-color: #2b2b28">
 					<center>
 					<h3>
 					  <a href="" class="typewrite" data-period="500" data-type='[ "Senior year Student at NITR.", "Love to meet new people over a cup of Coffee." ]'>
@@ -61,9 +79,8 @@
 			<div class="col-sm-2"></div>
 	</div>
   
-  <img src="img/ash.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ashish Jha" width="250" height="250">
-  <h3>Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity.</h3>
-  
+  <img src="img/ash.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Ashish Jha" width="250" height="250">  
+  <h4><i>Be curious. Read widely. Try new things. What people call intelligence just boils down to curiosity." <footer style="color: grey; text-align: center;">-Aaron Swartz</footer></i></h4>
   <div class="container text-center">
     <a href="https://www.facebook.com/amiable.ashish" class="btn btn-social-icon btn-lg btn-facebook"><i class="fa fa-facebook fa-2x"></i></a>
     <a href="https://twitter.com/ashish_jha_96" class="btn btn-social-icon btn-lg btn-twitter"><i class="fa fa-twitter fa-2x"></i></a>
@@ -76,31 +93,68 @@
 </div>
 
 <!-- Second Container  Basic About Us-->
+
 <div class="container-fluid bg-2 text-center" id="about">
   <h3 class="margin">About</h3>
   <p>I am 4th year CSE Undergrad at NIT Rourkela, who is fascinated and excited about disruptive technologies. I have worked in many domains of computer science like machine learning, Deep Learning and App development(Native and Progressive). Proficient in Algorithm, Data Structures, Parallel Algorithms and core subjects of computer science.</p>
   <center>
-  <iframe src="https://ghbtns.com/github-btn.html?user=lapalb&amp;type=follow&amp;count=true&amp;size=small" frameborder="0" scrolling="0" width="220px" height="30px"></iframe></center>
+  <iframe src="https://ghbtns.com/github-btn.html?user=lapalb&amp;type=follow&amp;count=true&amp;size=small" frameborder="0" scrolling="0" width="150px" height="30px" ></iframe></center>
 </div>
 
 <!-- Third Container Some of Recent Blogs (Grid) -->
 <div class="container-fluid bg-1 text-center" id="blog">    
-  <h3 class="margin">Blogs</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="birds3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
+  <h3 class="margin">I got some skills!</h3><br>
+  <div class="skills-flex-wrapper"> 
+      <div class="row">
+        <div class=" col-sm-3">
+          <div class="flex-item dev-wrapper"> 
+            <h2 class="skills-heading"> <span class="sprite dev"></span> <span>Language</span> </h2> 
+            <ul> 
+              <li class="dev-item">C++</li> 
+              <li class="dev-item">C</li>  
+              <li class="dev-item">Python</li> 
+              <li class="dev-item">JavaScript</li> 
+              <li class="dev-item">Java</li> 
+              <li class="dev-item">Matlab</li> 
+            </ul> 
+          </div> 
+        </div>
+
+        <div class=" col-sm-6">
+          <div class="flex-item dev-wrapper"> 
+            <h2 class="skills-heading"> <span class="sprite dev"></span> <span>Frameowrk</span> </h2> 
+            <ul> 
+              <li class="dev-item">MySql</li> 
+              <li class="dev-item">Mongo</li>  
+              <li class="dev-item">OpenMP</li> 
+              <li class="dev-item">OpenCV</li>
+              <li class="dev-item">OpenGL</li>  
+              <li class="dev-item">Node</li> 
+              <li class="dev-item">PHP</li>
+              <li class="dev-item">PWA</li> 
+              <li class="dev-item">Android</li> 
+            </ul> 
+          </div> 
+        </div>
+
+        <div class=" col-sm-3">
+          <div class="flex-item dev-wrapper"> 
+            <h2 class="skills-heading"> <span class="sprite dev"></span> <span>Software</span> </h2> 
+            <ul> 
+              <li class="dev-item">Git</li> 
+              <li class="dev-item">Tableau</li>  
+              <li class="dev-item">MS Office</li> 
+              <li class="dev-item">Cpanel</li> 
+              <li class="dev-item">Adobe CC</li> 
+            </ul> 
+          </div> 
+        </div>
+
+      </div>
   </div>
 </div>
+
+
 
 <!-- Fourth Container (Grid) -->
 <div class="container-fluid bg-2 text-center" id="timeline"> 

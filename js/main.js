@@ -3,6 +3,7 @@
         this.el = el;
         this.loopNum = 0;
         this.period = parseInt(period, 10) || 2000;
+        console.log(period);
         this.txt = '';
         this.tick();
         this.isDeleting = false;
@@ -22,10 +23,10 @@
         var that = this;
         var delta = 200 - Math.random() * 100;
 
-        if (this.isDeleting) { delta /= 2; }
+        if (this.isDeleting) { delta /= 8; }
 
         if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
+        delta = this.period/8;
         this.isDeleting = true;
         } else if (this.isDeleting && this.txt === '') {
         this.isDeleting = false;
@@ -35,13 +36,15 @@
 
         setTimeout(function() {
         that.tick();
-        }, delta);
+        }, 100);
     };
 
     window.onload = function() {
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
+            console.log(elements.length);
             var toRotate = elements[i].getAttribute('data-type');
+            console.log(elements[i].getAttribute('data-type'))
             var period = elements[i].getAttribute('data-period');
             if (toRotate) {
               new TxtType(elements[i], JSON.parse(toRotate), period);
@@ -53,3 +56,5 @@
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+    // When the user scrolls the page, execute myFunction 

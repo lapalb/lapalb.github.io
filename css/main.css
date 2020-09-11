@@ -189,7 +189,7 @@ h2
   grid-column-gap: 50px;
   margin-top: 50px;
   grid-row-gap: 50px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(371px, 1fr));
   padding: 10px;
 }
 .grid-item {
